@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinCells.Pages.ListViewPage">
+    <ContentPage.Content>
+        <ListView x:Name="EmployeeList" ItemSelected="EmployeeList_OnItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" Detail="{Binding Function}">
+                        <TextCell.ContextActions>
+                            <MenuItem Text="Vacation" Clicked="MenuItem_OnClickedVacation" CommandParameter="{Binding .}"/>
+                            <MenuItem Text="Welfare" Clicked="MenuItem_OnClickedWelfare" CommandParameter="{Binding .}"/>
+                        </TextCell.ContextActions>
+                    </TextCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

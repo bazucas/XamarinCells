@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinCells.Pages.SwitchCellPage">
+    <ContentPage.Content>
+        <TableView>
+            <TableRoot>
+                <TableSection Title="Configuration">
+                    <SwitchCell On="False" Text="Auto Backup"/>
+                    <SwitchCell On="False" Text="Save passwords"/>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>
